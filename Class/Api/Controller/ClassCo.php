@@ -14,6 +14,7 @@ class ClassCO extends ClassCM
         $this->classCode = $class_code;
         $this->classTeacher = $class_teacher;
     }
+
     public function introduceClass()
     {
         if ($this->isEmptyInputs() == true) {
@@ -32,12 +33,12 @@ class ClassCO extends ClassCM
         $this->ammendClass($this->classId, $this->className, $this->classCode, $this->classTeacher);
     }
 
-    private function isEmptyInputs()
+
+    public function deleteClass(): void
     {
-        if (empty($this->className) || empty($this->classCode) || empty($this->classTeacher)) {
-            return true;
-        } else {
-            return false;
+        if ($this->isEmptyInputs() == true) {
+            header(header: "location:./../index.php?msg=empty_fields");
+            exit;
         }
     }
 }
