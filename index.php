@@ -13,24 +13,23 @@
 
         <form action="" method="post">
             <input type="text" name="class_name" placeholder="Class Name">
-            <input type="text" name="class_code" placeholder="Class Name">
-            <input type="test" name="class_teacher" placeholder="Class Teacher">
-            <button type="submit" name="addclass" Add Class></button>
+            <input type="text" name="class_code" placeholder="Class Code">
+            <input type="text" name="class_teacher" placeholder="Class Teacher">
+            <input type="text" name="class_addedDate" placeholder="Class Added Date">
+            <button type="submit" name="addclass">Add Class</button>
         
         </form>
     </div>
     <div>
-<table border="2" width="100%" cellspacing="6" cellpadding="6" style="text-align: center; margin-top:2em;"></table>
+<table border="2" width="100%" cellspacing="6" cellpadding="6" style="text-align: center; margin-top:2em;">
 <thead>
     <tr>
-      <th>S.N.</th>
+                    <th>S.N.</th>
                     <th>Class Name</th>
                     <th>Class Code</th>
                     <th>Class Teacher</th>
                     <th>Class Added Date</th>
-                    <th>
-                        Action
-                    </th>
+                    <th>Action</th>
                     </tr>
             </thead>
 </table>
